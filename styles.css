@@ -1,0 +1,16 @@
+html, body {
+  background-image: linear-gradient(to bottom, #7db402, #73a501, #689601, #5e8700, #547900);
+  height: 100%
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
