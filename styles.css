@@ -3,14 +3,63 @@ html, body {
   height: 100%
 }
 
-.container {
-  height: 100%;
-  position: relative;
-}
+
 .loader {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
+#ball {
+  position: fixed;
+  top: 3em;
+  width: 3em;
+  height: 3em;
+  left: 6em;
+  -webkit-animation: bounce .3s cubic-bezier(.63, .09, .76, .45) infinite alternate;
+  -moz-animation:    bounce .3s cubic-bezier(.63, .09, .76, .45)  infinite alternate;
+  -o-animation:      bounce .3s cubic-bezier(.63, .09, .76, .45)  infinite alternate;
+  animation:         bounce .3s cubic-bezier(.63, .09, .76, .45)  infinite alternate;
+}
+
+#bat {
+  position: fixed;
+  top: 3em;
+  left: -11em;
+  -webkit-animation: hit .3s cubic-bezier(.63, .09, .75, .46) infinite alternate;
+  -moz-animation:    hit .3s cubic-bezier(.63, .09, .75, .46) infinite alternate;
+  -o-animation:      hit .3s cubic-bezier(.63, .09, .75, .46) infinite alternate;
+  animation:         hit .3s cubic-bezier(.63, .09, .75, .46) infinite alternate;
+}
+
+@-webkit-keyframes hit {
+  from { transform: rotate(0deg);} 
+  to { transform: rotate(-10deg); }
+}
+
+@-webkit-keyframes bounce {
+  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
+  25% { height: 3em; width: 3em; }
+  75% { height: 3em; width: 3em; }
+  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
+}
+@-moz-keyframes bounce {
+  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
+  25% { height: 3em; width: 3em; }
+  75% { height: 3em; width: 3em; }
+  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
+}
+@-o-keyframes bounce {
+  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
+  25% { height: 3em; width: 3em; }
+  75% { height: 3em; width: 3em; }
+  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
+}
+@keyframes bounce {
+  0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
+  25% { height: 3em; width: 3em; }
+  75% { height: 3em; width: 3em; }
+  100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
+} 
