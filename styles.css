@@ -3,7 +3,6 @@ html, body {
   height: 100%
 }
 
-
 .loader {
   position: absolute;
   left: 50%;
@@ -45,18 +44,21 @@ html, body {
   75% { height: 3em; width: 3em; }
   100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
 }
+
 @-moz-keyframes bounce {
   0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
   25% { height: 3em; width: 3em; }
   75% { height: 3em; width: 3em; }
   100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
 }
+
 @-o-keyframes bounce {
   0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
   25% { height: 3em; width: 3em; }
   75% { height: 3em; width: 3em; }
   100% { top: 0; height: 3em; width: 3em; transform: rotate(-20deg); }
 }
+
 @keyframes bounce {
   0% { top: -7em; height: 3em; width: 3em; transform: rotate(20deg); }
   25% { height: 3em; width: 3em; }
