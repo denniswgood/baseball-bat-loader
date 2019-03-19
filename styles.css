@@ -1,6 +1,12 @@
 html, body {
-  background-image: linear-gradient(to bottom, #7db402, #73a501, #689601, #5e8700, #547900);
-  height: 100%
+  background: repeating-linear-gradient(120deg,
+  #236533,
+  #236533 127px,
+  #1a5127 127px,
+  #1a5127 260px);
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .loader {
@@ -17,25 +23,37 @@ html, body {
   width: 3em;
   height: 3em;
   left: 6em;
-  -webkit-animation: bounce .3s cubic-bezier(.63, .09, .76, .45) infinite alternate;
-  -moz-animation:    bounce .3s cubic-bezier(.63, .09, .76, .45)  infinite alternate;
-  -o-animation:      bounce .3s cubic-bezier(.63, .09, .76, .45)  infinite alternate;
-  animation:         bounce .3s cubic-bezier(.63, .09, .76, .45)  infinite alternate;
+  -webkit-animation: bounce .3s cubic-bezier(.63,.09,.76,.45) infinite alternate;
+  -moz-animation:    bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
+  -o-animation:      bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
+  animation:         bounce .3s cubic-bezier(.63,.09,.76,.45)  infinite alternate;
 }
 
 #bat {
   position: fixed;
   top: 3em;
-  left: -11em;
-  -webkit-animation: hit .3s cubic-bezier(.63, .09, .75, .46) infinite alternate;
-  -moz-animation:    hit .3s cubic-bezier(.63, .09, .75, .46) infinite alternate;
-  -o-animation:      hit .3s cubic-bezier(.63, .09, .75, .46) infinite alternate;
-  animation:         hit .3s cubic-bezier(.63, .09, .75, .46) infinite alternate;
+  left: -10.5em;
+  -webkit-animation: hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  -moz-animation:    hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  -o-animation:      hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+  animation:         hit .3s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+}
+
+.red {
+  fill:#D7172A;
+}
+
+.tan {
+  fill:#FFD87D;
+}
+
+.white {
+  fill:#ffffff;
 }
 
 @-webkit-keyframes hit {
-  from { transform: rotate(0deg);} 
-  to { transform: rotate(-10deg); }
+  0% { transform: rotate(0deg);} 
+  100% { transform: rotate(-10deg); }
 }
 
 @-webkit-keyframes bounce {
